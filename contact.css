@@ -1,0 +1,47 @@
+.contact-container {
+    margin: 4vw;
+    padding: 2vw 4vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 2vw;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4vw;
+}
+.contact-container form {
+    flex-grow: 2;
+    display: grid;
+    color: grey;
+}
+.contact-container form div:nth-last-of-type(n+1) {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.contact-container form input {
+    border: none;
+    border-radius: 1vw;
+    width: 90%;
+    height: 2.5vw;
+    padding: 0.5vw 1vw;
+    font-size: 1rem;
+}
+.contact-container form input:focus { outline: none; }
+.contact-container form div:last-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container form div:last-of-type input {
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    width: max(10vw,40px);
+    height: max(3vw,15px);
+    cursor: pointer;
+}
+.contact-container iframe {
+    height: 30vw;
+    width: 40vw;
+    border: 0;
+    border-radius: 1vw;
+    font-size: 1rem;
+}
